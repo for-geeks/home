@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>微缩自动驾驶小车 | 极客风 for-geeks.com</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="自动驾驶技术是2018年最前沿最热门的话题了， 就连今年各种各样的电视广告里都充满了自动驾驶的车型广告。 像刘雯做的那个凯迪拉克的广告， 号称真正放开双手。 像之前特斯拉提出的概念， 高速自动巡航。 还有奥迪新A8， 这些都已经出现在人们的生活中了， 正在飞速的改变生活。 除了已经上市的汽车， 还有比如百度Apollo，纵目科技等自动驾驶技术公司的合作量产车型也在慢慢的浮出水面， 最晚在2020年">
+<meta name="keywords" content="智能驾驶,师资培训,实验内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微缩自动驾驶小车">
+<meta property="og:url" content="http://mickeyouyou.coding.me/geek-home/2018-5-27-microcar.html">
+<meta property="og:site_name" content="极客风 for-geeks.com">
+<meta property="og:description" content="自动驾驶技术是2018年最前沿最热门的话题了， 就连今年各种各样的电视广告里都充满了自动驾驶的车型广告。 像刘雯做的那个凯迪拉克的广告， 号称真正放开双手。 像之前特斯拉提出的概念， 高速自动巡航。 还有奥迪新A8， 这些都已经出现在人们的生活中了， 正在飞速的改变生活。 除了已经上市的汽车， 还有比如百度Apollo，纵目科技等自动驾驶技术公司的合作量产车型也在慢慢的浮出水面， 最晚在2020年">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/1.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/2.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/3.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/4.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/5.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/6.png">
+<meta property="og:image" content="http://wiki.baidu.com/download/thumbnails/478537492/IMG_2231.JPG?version=1&modificationDate=1521984921000&api=v2">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/7.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/8.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/9.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/10.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/12.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/13.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/14.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/15.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/16.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/17.png">
+<meta property="og:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/18.png">
+<meta property="og:updated_time" content="2019-08-27T07:31:23.614Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微缩自动驾驶小车">
+<meta name="twitter:description" content="自动驾驶技术是2018年最前沿最热门的话题了， 就连今年各种各样的电视广告里都充满了自动驾驶的车型广告。 像刘雯做的那个凯迪拉克的广告， 号称真正放开双手。 像之前特斯拉提出的概念， 高速自动巡航。 还有奥迪新A8， 这些都已经出现在人们的生活中了， 正在飞速的改变生活。 除了已经上市的汽车， 还有比如百度Apollo，纵目科技等自动驾驶技术公司的合作量产车型也在慢慢的浮出水面， 最晚在2020年">
+<meta name="twitter:image" content="http://mickeyouyou.coding.me/metronic/assets/pages/img/news/1.png">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/metronic/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/metronic/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/metronic/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/metronic/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/metronic/assets/corporate/css/themes/orange.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END -->
+</head>
+</html>
+<body class="corporate">
+  <!-- BEGIN TOP BAR -->
+<div class="pre-header">
+	<div class="container">
+		<div class="row">
+			<!-- BEGIN TOP BAR LEFT PART -->
+			<div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+				<ul class="list-unstyled list-inline">
+					<li><i class="fa fa-phone"></i><span>13697125687</span></li>
+					<li><i class="fa fa-envelope-o"></i><span>koppu92@163.com</span></li>
+				</ul>
+			</div>
+			<!-- END TOP BAR LEFT PART -->
+			<!-- BEGIN TOP BAR MENU -->
+			<div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+				<ul class="list-unstyled list-inline pull-right">
+					<li><a href="/login">Log In</a></li>
+				</ul>
+			</div>
+			<!-- END TOP BAR MENU -->
+		</div>
+	</div>
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+	<div class="container">
+		<!--<a class="site-logo" href="/" id="logo">极客风 for-geeks.com</a>-->
+
+		<a class="site-logo" style=" text-decoration:none;">
+			<p>极客风</p>
+		</a>
+
+		<a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+		<!-- BEGIN NAVIGATION -->
+		<div class="header-navigation pull-right font-transform-inherit">
+			<ul>
+				
+				<li
+					class="active">
+					<a href="/">首页</a>
+				</li>
+				
+				<li
+					class="">
+					<a href="/projects/">项目</a>
+				</li>
+				
+				<li
+					class="">
+					<a href="/archives/">博客</a>
+				</li>
+				
+				<li
+					class="">
+					<a href="/contact/">联系我们</a>
+				</li>
+				
+				<li
+					class="">
+					<a href="/about/">关于极客风</a>
+				</li>
+				
+				<!-- BEGIN TOP SEARCH -->
+				<li class="menu-search">
+					<span class="sep"></span>
+					<i class="fa fa-search search-btn"></i>
+					<div class="search-box">
+						<form action="#">
+							<div class="input-group">
+								<input type="text" placeholder="Search" class="form-control st-default-search-input">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="submit">Search</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</li>
+				<!-- END TOP SEARCH -->
+			</ul>
+		</div>
+		<!-- END NAVIGATION -->
+	</div>
+</div>
+<!-- Header END -->
+  <div class="container">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2018-5-27-microcar.html">微缩自动驾驶小车</a>
+    </h2>
+
+
+    <div class="row">
+  <div class="col-md-9 col-sm-9 blog-posts">
+    <article id="post-microcar" class="article article-type-post blog-item"
+      itemscope itemprop="blogPost">
+      <div class="article-meta">
+      </div>
+      <div class="article-inner">
+        
+        
+        <header class="article-header">
+          <ul class="blog-info">
+            <li><i class="fa fa-user"></i> Anonymous</li>
+            <li><i class="fa fa-calendar"></i>
+              <time datetime="2018-05-27T06:54:37.000Z" itemprop="datePublished">2018/05/27</time>
+
+            </li>
+            <li class="hidden-xs"><i class="fa fa-comments"></i>
+              <a href="http://mickeyouyou.coding.me/geek-home/2018-5-27-microcar.html#disqus_thread" class="article-comment-link">Comments</a>
+            </li>
+            <li class="hidden-xs"><i class="fa fa-tags"></i>
+              
+  
+    <a href="/tags/智能驾驶/" title="智能驾驶">智能驾驶</a>,
+  
+    <a href="/tags/师资培训/" title="师资培训">师资培训</a>,
+  
+    <a href="/tags/实验内容/" title="实验内容">实验内容</a>
+  
+
+
+            </li>
+          </ul>
+          
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/极客风/">极客风</a>
+  </div>
+  <br>
+
+
+        </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+          
+          <p>自动驾驶技术是2018年最前沿最热门的话题了， 就连今年各种各样的电视广告里都充满了自动驾驶的车型广告。 像刘雯做的那个凯迪拉克的广告， 号称真正放开双手。 像之前特斯拉提出的概念， 高速自动巡航。 还有奥迪新A8， 这些都已经出现在人们的生活中了， 正在飞速的改变生活。</p>
+<p>除了已经上市的汽车， 还有比如百度Apollo，纵目科技等自动驾驶技术公司的合作量产车型也在慢慢的浮出水面， 最晚在2020年， 我国自己的L3自动驾驶车型也会落地量产， 改变国内消费者的生活方式。</p>
+<p>目前看来， 大多数公司的自动驾驶技术路线还是 “传感器+高性能处理器+可线控的传统汽车”， 而并非”从头做一个完全的自动驾驶汽车“。 在前者的路线看来， 自动驾驶的技术是和传统汽车的技术剥离开的。 这也很符合新入汽车市场的科技公司的现状， 毕竟传统汽车的确是需要积累的。</p>
+<p>所以， 抛开传统汽车， 自动驾驶的技术和机器人的技术看起来并没有太大的差别。 这也是为什么Apollo也用在物流车， 农业车上面， 也是为什么很多自动驾驶公司都使用ROS来做自动驾驶架构的原因。 ”微缩自动驾驶小车“这一系列教程就是以纯机器人的视角， 来从最底层开发一个能够自主完成部分自动驾驶功能的小型机器人。 从中设计了感知-决策-规划-控制-系统集成几个层面， 基本涵盖了机器人技术的主要框架， 是学习机器人的最好项目。</p>
+<p>下面这个视频是国外一个大神做的小车， 我们来看看他都能完成哪些功能吧。</p>
+<video id="video" controls preload="none">
+<source id="mp4" src="http://www.raosiyue.com/wp-content/uploads/2018/08/Autounmous-RC-car.mp4" type="video/mp4">
+</video>
+
+<p>是不是很棒， 下面我们也开始制作自己的小车吧。</p>
+<h2 id="自动驾驶小车-硬件搭建"><a href="#自动驾驶小车-硬件搭建" class="headerlink" title="自动驾驶小车-硬件搭建"></a>自动驾驶小车-硬件搭建</h2><ol>
+<li><p><strong>第一步小车主体</strong><br>小车到手包含底盘与驱动板， 无需组装。<br><img src="/metronic/assets/pages/img/news/1.png" alt>  </p>
+<p>拆屏幕</p>
+</li>
+<li><p><strong>第二步摄像头安装</strong><br><img src="/metronic/assets/pages/img/news/2.png" alt><br>使用M2螺丝将摄像头固定在安装架上， 将排线从预留的缝隙穿出。</p>
+<p><img src="/metronic/assets/pages/img/news/3.png" alt></p>
+<p><img src="/metronic/assets/pages/img/news/4.png" alt><br>将安装架与支杆链接， 完成摄像头安装架的组装。</p>
+</li>
+<li><p><strong>超声波传感器安装</strong><br><img src="/metronic/assets/pages/img/news/5.png" alt><br>使用M1.5的螺丝螺母将超声波传感器固定在安装架上。<br><img src="/metronic/assets/pages/img/news/6.png" alt><br>然后使用M3螺丝螺母将传感器架固定在小车正前方的安装孔。<br><img src="http://wiki.baidu.com/download/thumbnails/478537492/IMG_2231.JPG?version=1&modificationDate=1521984921000&api=v2" alt></p>
+</li>
+<li><p><strong>树莓派安装</strong></p>
+</li>
+</ol>
+<p><img src="/metronic/assets/pages/img/news/7.png" alt></p>
+<p>安装架的四个孔， 使用M2.5的铜柱与螺丝进行固定安装。 移动电源装底下， 树莓派装第二层。</p>
+<p><img src="/metronic/assets/pages/img/news/8.png" alt></p>
+<p>摄像头排线的安装： 拔起排线座的卡口， 将排线平方进去， 接触头面向拍摄方向， 压紧卡口即可。</p>
+<p><img src="/metronic/assets/pages/img/news/9.png" alt></p>
+<p><strong>5. 接线</strong></p>
+<p>整车唯一需要接线的是超声波传感器。 使用四根公对母的杜邦线， 将超声波传感器与底板的接口连接。</p>
+<p><img src="/metronic/assets/pages/img/news/10.png" alt></p>
+<p>此端口就在开关旁， 链接方式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">arduino： Sonar：</span><br><span class="line">GND  GND</span><br><span class="line">+5v(vcc)  Vcc</span><br><span class="line">D10   Trig</span><br><span class="line">D12   Echo</span><br></pre></td></tr></table></figure>
+
+<p><img src="/metronic/assets/pages/img/news/12.png" alt></p>
+<p><strong>6. 总体装配</strong></p>
+<p><img src="/metronic/assets/pages/img/news/13.png" alt></p>
+<p>树莓派与arduino的链接， 使用特殊的打印机USB线， 可以把线绕短藏入底盘中间。</p>
+<p><img src="/metronic/assets/pages/img/news/14.png" alt></p>
+<h2 id="自动驾驶小车-软件环境搭建"><a href="#自动驾驶小车-软件环境搭建" class="headerlink" title="自动驾驶小车-软件环境搭建"></a>自动驾驶小车-软件环境搭建</h2><h3 id="Arduino部分开发环境搭建与固件烧录"><a href="#Arduino部分开发环境搭建与固件烧录" class="headerlink" title="Arduino部分开发环境搭建与固件烧录"></a>Arduino部分开发环境搭建与固件烧录</h3><p><strong>理论上不需要对arduino做任何开发， 但如果向细致了解的， 可以访问<a href="https://share.weiyun.com/f125009ccb63c5ed45ebf2c943529e20" target="_blank" rel="noopener">https://share.weiyun.com/f125009ccb63c5ed45ebf2c943529e20</a></strong></p>
+<p><strong>里面有小车底盘的详细资料</strong></p>
+<p><strong>一、 IDE与驱动的安装</strong></p>
+<p>Arduino IDE 1.8.5下载 <a href="https://pan.baidu.com/s/1kUI1Pbh" target="_blank" rel="noopener">http://pan.baidu.com/s/1kUI1Pbh</a>  </p>
+<p>下载后根据使用的操作系统进行在PC进行安装即可。 建议使用windows进行安装。</p>
+<p>安装的时候请记住你的安装目录。</p>
+<p>然后安装驱动：</p>
+<p>Found this to work on Win7 64bit<br>下载地址<a href="http://www.winchiphead.com/download/CH341/CH341SER.ZIP" target="_blank" rel="noopener">http://www.winchiphead.com/download/CH341/CH341SER.ZIP</a></p>
+<p>安装前，先卸载老的驱动！   安装的时候，不要插340的串口哦。</p>
+<p><strong>二、 依赖库的下载与添加</strong></p>
+<p><a href="http://www.raosiyue.com/wp-content/uploads/2018/08/Arduino_FreeRTOS_Library-master.zip" target="_blank" rel="noopener">Arduino_FreeRTOS_Library-master</a></p>
+<p><a href="http://www.raosiyue.com/wp-content/uploads/2018/08/PinChangeInt-master.zip" target="_blank" rel="noopener">PinChangeInt-master</a></p>
+<p>打开Arduino IDE, 点击项目、 加载库、 添加一个zip库， 分别添加这两个zip库。</p>
+<p>至此arduino环境搭建完毕。</p>
+<p><img src="/metronic/assets/pages/img/news/15.png" alt></p>
+<p><strong>三、 固件的烧录</strong></p>
+<p>使用IDE打开源码： chassie_contro_with_sonarl.ino</p>
+<p><a href="http://www.raosiyue.com/wp-content/uploads/2018/08/chassie_control.rar" target="_blank" rel="noopener">chassie_control</a></p>
+<p>选择对应主控板的端口</p>
+<p><strong><img src="/metronic/assets/pages/img/news/16.png" alt></strong></p>
+<p>点击→（上传）图标， 将固件烧写入Arduino主板。</p>
+<p>*<em><img src="/metronic/assets/pages/img/news/17.png" alt><br>*</em></p>
+<p><strong>四、 烧录固件后的测试方法</strong></p>
+<p>安装一个串口助手工具， <a href="http://www.darkwood.me/dl/spu/serial_port_utility_latest.exe" target="_blank" rel="noopener">http://www.darkwood.me/dl/spu/serial_port_utility_latest.exe</a></p>
+<p>打开串口助手， 打开对应arduino的串口号， 配置如下， 输入图中发送栏的字符串（行末尾敲一下回车键）， 然后点击发送。</p>
+<p>自动重发的周期不要小于50ms， 否则会出现问题。</p>
+<p><img src="/metronic/assets/pages/img/news/18.png" alt></p>
+<p>接收栏能够显示到车辆的信息， 修改发送的数值可以控制车辆运动。 第一个数字表示前进速度， 第二个表示转舵角度。</p>
+<p>数据格式：</p>
+<p>控制数据帧格式：   RASPI:(xx.x 目标速度)(逗号)（xx.x 转向角）(换行符)</p>
+<p>例如： RASPI:35.0,30</p>
+<p>反馈数据帧格式： MCU:(电池电压)（逗号）（左轮速度）（逗号）（右轮速度）（逗号）（超声波测距值）(换行符)</p>
+<p>例如： MCU：7.9,80.0,80.0,142.4</p>
+<p>速度单位为：  脉冲数量/50ms</p>
+<p>换算关系为      x脉冲/50ms  =  0.01*x m/s</p>
+<h3 id="树莓派端开发环境搭建与数据接口例程"><a href="#树莓派端开发环境搭建与数据接口例程" class="headerlink" title="树莓派端开发环境搭建与数据接口例程"></a>树莓派端开发环境搭建与数据接口例程</h3><p><strong>一、 树莓派raspbian操作系统安装</strong></p>
+<p>该步骤需要准备： 1. 键盘鼠标  2. HDMI线与支持HDMI的显示器   3. 我们提供的SD卡</p>
+<p>该步骤有大量详细的教程， 总结起来就是——将系统镜像烧录到SD卡——将sd卡插入树莓派， 给树莓派通电， 链接HDMI显示器与键盘鼠标——根据提示安装系统</p>
+<p>官方网站提供的操作系统镜像与安装教程链接如下： （请安装raspbian with desktop）</p>
+<p><a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener">https://www.raspberrypi.org/downloads/raspbian/</a></p>
+<p><a href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md" target="_blank" rel="noopener">https://www.raspberrypi.org/documentation/installation/installing-images/README.md</a></p>
+<p>根据链接的指导完SD卡烧录后， 将SD卡插入树莓派的SD卡槽， 链接HDMI显示器， 然后上电。 （有时候先上电的话有些显示器没反应）。 这时就是典型linux系统的安装界面了， 根据提示一步步安装， 配置可以链接的无线网等等。 （此时我要提醒， 如果大家安装raspbian并且在公司安装使用的话， 可能不能连接公司wifi， 这是操作系统的问题， 如果在公司建议使用网线连接到笔记本， 然后共享网络，或者是在家里用wifi）。</p>
+<p>操作系统安装完毕后， 默认的用户名是pi， 密码是raspberry。 安全起见， 请大家修改密码， 以免被攻击。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd pi #修改 Pi 密码    </span><br><span class="line">sudo passwd root #设置 root 密码      </span><br><span class="line">su root #切换到 root 用户    </span><br><span class="line">su pi #切换到 pi 用户</span><br></pre></td></tr></table></figure>
+
+<p>注意， raspbian默认是无法像ubuntu或windows一样通过选择wifi来连接Wifi的， 因此需要特殊配置：</p>
+<p>编辑相关的配置文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/wpa\_supplicant/wpa\_supplicant.conf</span><br></pre></td></tr></table></figure>
+
+<p>增加wifi配置如下：</p>
+<p># 配置wifi<br>network={<br>ssid=”***_WiFi”<br>key_mgmt=WPA-EAP<br>eap=PEAP<br>identity=”USERNAME”<br>password=”PASSWORD”<br>}</p>
+<p><strong>二、 树莓派ssh的启动</strong></p>
+<p>安装完了， 这不就一个电脑么， 这连着显示屏， 鼠标键盘的怎么跑啊。 raspbian和linux一样有ssh远程登陆服务， 默认不开启。  此时先打开ssh功能：</p>
+<ol>
+<li>Enter <code>sudo raspi-config</code> in a terminal window</li>
+<li>Select <code>Interfacing Options</code></li>
+<li>Navigate to and select <code>SSH</code></li>
+<li>Choose <code>Yes</code></li>
+<li>Select <code>Ok</code></li>
+<li>Choose <code>Finish</code></li>
+</ol>
+<p><code>同理， camera默认也不开启， 请顺手开启camera：</code></p>
+<ol>
+<li>Enter <code>sudo raspi-config</code> in a terminal window</li>
+<li>Select <code>Interfacing Options</code></li>
+<li>Navigate to and select <code>camera</code></li>
+<li>Choose <code>Yes</code></li>
+<li>Select <code>Ok</code></li>
+<li>Choose <code>Finish</code></li>
+</ol>
+<p>安装ssh工具（虽然本身自带）与开机自启动ssh服务的设置方法如下：</p>
+<p><a href="https://blog.csdn.net/qq813480700/article/details/71597808" target="_blank" rel="noopener">https://blog.csdn.net/qq813480700/article/details/71597808</a></p>
+<p>这篇博客讲解了如何开启ssh服务并开机启动， 这样一来， 只要知道ip地址， 就可以远程ssh链接树莓派了。</p>
+<p>在终端使用ifconfig查看一下地址， 然后用xshell或者putty链接一下， 就可以远程登陆并使用树莓派了。 如果是在某路由器下， 也可以直接查看路由器来查获树莓派的ip地址。</p>
+<p>当然， 除此之外也可以设定静态ip地址， 这样就不用每次都查ip了。</p>
+<p><strong>三、 树莓派vnc的安装与启动</strong></p>
+<p>ssh不就是个命令行么？ 我们可是要做图像分析的啊， 这怎么显示图像啊？ 这时候安装一下vnc就能解决这个问题。</p>
+<p><a href="http://shumeipai.nxez.com/2013/09/04/login-rpi-with-vnc.html?variant=zh-cn" target="_blank" rel="noopener">http://shumeipai.nxez.com/2013/09/04/login-rpi-with-vnc.html?variant=zh-cn</a></p>
+<p>这篇文章详细讲述了如何远程连接树莓派的桌面， 直接在pc上访问树莓派的图形界面。</p>
+<p><strong>四、 树莓派opencv环境搭建</strong></p>
+<p>当然， 有可能你的计划里压根没有opencv， 但我还是加上这部分了。 安装这个常用工具的用处还是蛮多的， 毕竟图像也要有窗口显示不是么。</p>
+<p>网上的教程挺多的， 方法也各种各样。 我个人用的是源码安装的方法， 编译比较慢。 还有些其他教程， 虽然看起来很简单，但是万一出了问题就不好解决了。 我还是比较推崇源码安装。</p>
+<p>第一步： 去opencv官网下载源码压缩包</p>
+<p>第二步： 解压在某文件夹下</p>
+<p>第三步： </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">cmake ..</span><br><span class="line">make -j4</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+<p>到这步应该是结束了。 命令行中输入python进入python命令行， 输入import cv2， 如果没有报错， 则说明安装成功。 （/usr/local/bin/python/sitepacage 目录下有cv2.so即宣告安装成功）</p>
+<p>其他方法： <a href="https://blog.csdn.net/u014397533/article/details/50910531" target="_blank" rel="noopener">https://blog.csdn.net/u014397533/article/details/50910531</a></p>
+<p>当然， 有的同学习惯于搭建一个独立工作空间， 如果你比较熟悉可以忽略此步骤。</p>
+<p><strong>五、 树莓派camera的配置</strong></p>
+<p>树莓派的picamera， 需要开启一下。</p>
+<p>sudo raspi-config</p>
+<p>选择 interfacing option</p>
+<p>选择 camera</p>
+<p>enable yes</p>
+<p>现在树莓派的camera可以工作了， 先测试一下这个camera吧。</p>
+<p>raspistill -o test_cam.jpg</p>
+<p>查看一下当前文件夹， 是否多了一张叫test_cam的照片呢？  如果有， 那说明一切正常。</p>
+<p>下面测试一下opencv， picamera， 以及python是否一切正常。</p>
+<p>编辑一段python脚本如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># import the necessary packages</span></span><br><span class="line"><span class="keyword">from</span> picamera.array <span class="keyword">import</span> PiRGBArray</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> picamera <span class="keyword">import</span> PiCamera</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> time <span class="keyword">import</span> cv2 <span class="comment"># initialize the camera and grab a reference to the raw camera capture</span></span><br><span class="line">camera = PiCamera() camera.resolution \= (<span class="number">640</span>, <span class="number">480</span>) camera.framerate \= <span class="number">32</span> camera.hflip \= <span class="literal">True</span> camera.vflip \= <span class="literal">True</span> rawCapture \= PiRGBArray(camera, size=(<span class="number">640</span>, <span class="number">480</span>)) <span class="comment"># allow the camera to warmup</span></span><br><span class="line">time.sleep(<span class="number">0.1</span>) <span class="comment"># capture frames from the camera</span></span><br><span class="line"><span class="keyword">for</span> frame <span class="keyword">in</span> camera.capture\_continuous(rawCapture, format=<span class="string">"bgr"</span>, use\_video\_port=<span class="literal">True</span>): <span class="comment"># grab the raw NumPy array representing the image, then initialize the timestamp</span></span><br><span class="line">    <span class="comment"># and occupied/unoccupied text</span></span><br><span class="line">    image = frame.array <span class="comment"># show the frame</span></span><br><span class="line">    cv2.imshow(<span class="string">"Frame"</span>, image) key \= cv2.waitKey(<span class="number">1</span>) &amp; <span class="number">0xFF</span></span><br><span class="line">    <span class="comment"># clear the stream in preparation for the next frame</span></span><br><span class="line"> rawCapture.truncate(<span class="number">0</span>) <span class="comment"># if the \`q\` key was pressed, break from the loop</span></span><br><span class="line">    <span class="keyword">if</span> key == ord(<span class="string">"q"</span>): <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p>来自于以下链接。</p>
+<p><a href="http://www.mamicode.com/info-detail-2024781.html" target="_blank" rel="noopener">http://www.mamicode.com/info-detail-2024781.html</a></p>
+<p>运行后该脚本能实时显示camera拍到的图像。 图像的大小、 感光度等等参数都可以在Picamera类中进行设置。</p>
+<p><strong>六、 树莓派与arduino的通信</strong></p>
+<p>树莓派与arduino是直接通过USB线进行连接的， 只需要串口库python-serial即可完成相互通信功能。</p>
+<p><strong>TIP: 在连接两者之前， 请确保小车底层控制板的开关是打开的， 否则会有供电问题！！！</strong></p>
+<p>1、将树莓派与arduino通过usb线进行连接</p>
+<p>2、在树莓派终端输入 ls /dev/tty*查看两者连接端口的名字。查看有没有ttyACM0 这个文件(注只有在两个硬件USB互连的情况下才会有这个。如果两者没有连接是不会有的) 最新的系统一般都会自动生成。看到ttyACM0就说明二者可以通讯了 接下来上测试代码。</p>
+<p><a href="http://www.raosiyue.com/wp-content/uploads/2018/08/test.rar" target="_blank" rel="noopener">test</a></p>
+<p>运行该python脚本， 就能够接受到arduino板上发的信息。</p>
+<p>上发的消息中， 第一个是动力电池电压， 正常范围在7-8.4v， 如果低于或高于这个范围， 都表示电池已经损坏， 请勿继续使用。 如果低于7.5， 请及时充电。</p>
+<p><strong>七、 控制小车脚本demo</strong></p>
+<p>将test_serial.py稍稍修改， 就能够指定转速， 指定转向的控制小车了。 比如我将发送的‘RASPI:0.0,0.0\n’ 修改为‘RASPI:20.0,20.0\n’， 后轮就会以20的转速前进， 前轮就会转一定角度。</p>
+<p> 注： 显示的电压值如果低于7.5， 底盘将不会执行任何动作。</p>
+<p>未完待续。</p>
+
+          
+        </div>
+      </div>
+      
+      
+<nav id="article-nav">
+  
+    <a href="/2019-8-27-more-action.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          更重实训！Apollo助燃第二期师资培训
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+      
+      <br>
+    </article>
+
+
+    
+
+  </div>
+  <div class="col-md-3 col-sm-3 blog-sidebar">
+    <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/极客风/">极客风 (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/Apollo/">Apollo (1)</a>
+	</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/实验内容/"><i class='fa fa-tags'></i>实验内容</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/师资培训/"><i class='fa fa-tags'></i>师资培训</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/智能驾驶/"><i class='fa fa-tags'></i>智能驾驶</a></li></ul>
+    </div>
+  </div>
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  
+    
+  
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+  </div>
+</div>
+  </section>
+</div>
+
+  <!-- BEGIN PRE-FOOTER -->
+<div class="pre-footer">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN BOTTOM ABOUT BLOCK -->
+      <div class="col-md-4 col-sm-6 pre-footer-col">
+        <h2>About Us</h2>
+        <p>极客风是一家专注自动驾驶，机器人，人工智能等领域的创新公司。 <br><br>技术研发人员均来自国内外知名高等学府，核心技术团队在自动驾驶领域深耕数余年，并连续承担了多个有关自动驾驶量产产品的项目工作。</p>
+      </div>
+      <!-- END BOTTOM ABOUT BLOCK -->
+
+      <!-- BEGIN BOTTOM CONTACTS -->
+      <div class="col-md-4 col-sm-6 pre-footer-col">
+        <h2>Contact</h2>
+        <address class="margin-bottom-40">
+          北京市顺义区<br>
+          空港街道安华大街<br>
+          1号1幢1层3692号<br>
+          Phone: 13697125687<br>
+          Email: <a href="mailto:koppu92@163.com">koppu92@163.com</a><br>
+        </address>
+      </div>
+      <!-- END BOTTOM CONTACTS -->
+    </div>
+  </div>
+</div>
+<!-- END PRE-FOOTER -->
+
+<!-- BEGIN FOOTER -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN COPYRIGHT -->
+      <div class="col-md-6 col-sm-6 padding-top-10">
+        &copy; 2019 极客风 for-geeks.com<br>
+        <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+      </div>
+      <!-- END COPYRIGHT -->
+      <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/for-geeks"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="https://twitter.com/ptsteadman"><i class="fa fa-twitter"></i></a></li>
+    
+      <li><a href="https://www.facebook.com/ptsteadman"><i class="fa fa-facebook"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+      <li><a href="https://linkedin.com/in/ptsteadman"><i class="fa fa-linkedin"></i></a></li>
+    
+      <li><a href="http://stackoverflow.com/users/2480493/patrick-steadman"><i class="fa fa-stackoverflow"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+    </div>
+  </div>
+</div>
+<!-- END FOOTER -->
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/metronic/assets/plugins/respond.min.js"></script>
+<![endif]-->
+<script src="/metronic/assets/plugins/jquery.min.js"></script>
+<script src="/metronic/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/metronic/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/metronic/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/metronic/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    Layout.init();
+    Layout.initOWL();
+    Layout.initTwitter();
+    Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+    Layout.initNavScrolling();
+    new WOW().init();
+  });
+</script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS -->
+
+
+
+
+
+
+
+<!-- END PAGE-SPECIFIC PLUGINS -->
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS -->
+</body>
+</html>
